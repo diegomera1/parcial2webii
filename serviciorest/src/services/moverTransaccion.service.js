@@ -11,8 +11,6 @@ class RealizacionService {
 				}
 				const solicitudes =response.data.solicitudes; 
 				solicitudes.forEach(solicitud => {
-					console.log('solicitud array')
-					console.log(solicitud)
 					const realizacion = {
 						DetallePiezas: solicitud.DetallePiezas,
 						DescripcionProblema: solicitud.DescripcionProblema,
@@ -27,8 +25,6 @@ class RealizacionService {
 					}
 
 					axios.post(`http://localhost:3232/v1/api/realizacion/nuevaRealizacion`, realizacion).catch(err=>{
-						console.log('error en el post')
-						console.log(err)
 						return res.status(400).json({ mensaje: 'error post', err: err })
 					});
 				});

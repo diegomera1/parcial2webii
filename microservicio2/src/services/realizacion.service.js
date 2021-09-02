@@ -2,10 +2,11 @@ const { Realizaciones} = require("../models");
 class RealizacionService {
 	crear(req, res){
 		const datos = req.body;
-		console.log('Datos')
-		console.log(daos)
+		console.log('Datosd as dsad sa')
+		console.log(datos)
 		Realizaciones.create(datos,function(err, resultado){
 			if(err){
+				console.log('error al crearse')
 				return res.status(400).json({mensaje:'Error al crear realizacion de mantenimiento en la db'});
 			}
 			console.log('Se creo con exito');

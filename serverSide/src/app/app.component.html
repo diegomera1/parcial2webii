@@ -1,0 +1,40 @@
+<mat-card class="card">
+  Micro servicio 1 
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Detalles pieza </mat-label>
+    <input matInput [(ngModel)]="datos.detallesPieza" />
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Descripcion problema </mat-label>
+    <input matInput [(ngModel)]="datos.descripcionProblema" />
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Tipo problema </mat-label>
+    <input matInput [(ngModel)]="datos.tipoProblema" />
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Numero ticket </mat-label>
+    <input matInput [(ngModel)]="datos.numeroTicket" />
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Fecha solicitud </mat-label>
+    <input matInput [(ngModel)]="datos.fechaSolicitud" />
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Hora  solicitud </mat-label>
+    <input matInput [(ngModel)]="datos.horaSolicitud" />
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Estado</mat-label>
+    <input matInput [(ngModel)]="datos.estado" />
+  </mat-form-field>
+  <br>
+  <button (click)="onUpload()" mat-raised-button>Enviar</button>
+</mat-card>
